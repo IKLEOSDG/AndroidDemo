@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NumberButton">
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@drawable/circle_number</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 运算符按钮的样式 -->
+    <style name="OperatorButton" parent="NumberButton">
+        <item name="android:background">@drawable/circle_ac</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- 功能按钮的样式 -->
+    <style name="FunctionButton" parent="NumberButton">
+        <item name="android:background">@drawable/circle_cal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="zero_Button" parent="NumberButton">
+        <item name="android:background">@drawable/elliptical_button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MenuActivity">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+      android:id="@+id/edittexttest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="edittexttest"
+       />
+
+    <Button
+      android:id="@+id/imageviewtest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="imageviewtest"
+      />
+
+    <Button
+      android:id="@+id/progresstest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="progresstest"
+      />
+
+
+    <Button
+      android:id="@+id/relativelayouttest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="relativelayouttest" />
+
+
+    <Button
+      android:id="@+id/recyclerViewtest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="recyclerViewtest" />
+
+    <Button
+      android:id="@+id/calculator"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="calculator" />
+
+    <Button
+      android:id="@+id/boardcasttest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="boardcasttest" />
+    <Button
+      android:id="@+id/musictest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="music test" />
+
+  </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

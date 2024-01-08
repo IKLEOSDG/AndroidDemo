@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/weatherLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/bg_default">
+
+  <TextView
+    android:id="@+id/tvCurrentCity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="北京市"
+    android:textStyle="bold"
+    android:textSize="24sp"
+    android:shadowColor="@color/cardview_dark_background"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="2"
+    />
+
+
+
+  <ImageView
+    android:id="@+id/imgViewChangeCity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/tvCurrentCity"
+    android:layout_alignBottom="@+id/tvCurrentCity"
+    android:layout_alignParentEnd="true"
+    android:layout_marginEnd="13dp"
+    android:adjustViewBounds="true"
+    android:maxWidth="53dp"
+    android:maxHeight="56dp"
+    android:scaleType="fitCenter"
+    android:background="@drawable/imageview_click_selector"
+    android:src="@drawable/ic_change_city"
+    android:clickable="true"
+    android:focusable="true" />
+
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvWeather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tvCurrentCity"
+    android:layout_marginBottom="16dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/recycler_view_background"
+    android:padding="2dp" />
+
+
+
+
+</RelativeLayout>
+

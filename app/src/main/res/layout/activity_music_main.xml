@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp"
+  android:orientation="vertical"
+  >
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerViewPlaylist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/textViewSongInfo"
+    android:gravity="center" />
+  <!-- 音乐信息 -->
+  <TextView
+    android:id="@+id/textViewSongInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Test song"
+    android:textSize="18sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:gravity="center"/>
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="100dp"
+  android:orientation="horizontal"
+  android:gravity="center">
+  <!-- 前一曲按钮 -->
+  <ImageButton
+    android:id="@+id/buttonPrevious"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@android:drawable/ic_media_previous"
+    android:layout_toLeftOf="@id/buttonPlayPause"
+    android:layout_alignTop="@id/buttonPlayPause"
+    android:layout_marginRight="20dp"/>
+
+  <!-- 播放/暂停按钮 -->
+  <ImageButton
+    android:id="@+id/buttonPlayPause"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_below="@id/seekBarSpeed"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:src="@android:drawable/ic_media_play" />
+
+  <!-- 后一曲按钮 -->
+  <ImageButton
+    android:id="@+id/buttonNext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@android:drawable/ic_media_next"
+    android:layout_toRightOf="@id/buttonPlayPause"
+    android:layout_alignTop="@id/buttonPlayPause"
+    android:layout_marginLeft="20dp"/>
+
+</LinearLayout>
+
+  <!-- 播放速度调节滑动条 -->
+  <SeekBar
+    android:id="@+id/seekBarSpeed"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textViewSongInfo"
+    android:layout_marginTop="20dp"
+    android:max="1000"
+    android:progress="0"/>
+
+</LinearLayout>
